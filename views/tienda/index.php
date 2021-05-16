@@ -19,7 +19,7 @@
 
         <div class="row">
             <div class="col">
-
+                 <h1>Registro de alquiler / venta  de video juegos</h1>
             </div>
 
 
