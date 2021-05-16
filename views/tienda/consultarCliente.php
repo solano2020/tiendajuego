@@ -14,12 +14,12 @@
 <body>
 
     <div class="container-fluid">
-        <!-- header -->
+           <!-- header -->
         <div class="row" id="header"></div>
-
+     
         <div class="row">
             <div class="col">
-
+                  
             </div>
 
 
@@ -28,7 +28,7 @@
 
 
         <script src="resources/js/jquery-3.5.1.js"></script>
-        <script src="resources/js/tienda/index.js"></script>
+        <script src="resources/js/tienda/consultarCliente.js"></script>
 </body>
 
 </html>

@@ -28,7 +28,7 @@
 
 
         <script src="resources/js/jquery-3.5.1.js"></script>
-        <script src="resources/js/tienda/index.js"></script>
+        <script src="resources/js/tienda/registrarTransaccion.js"></script>
 </body>
 
 </html>
