@@ -25,7 +25,7 @@
                      <form id="form">
                          <div class="mb-1">
                              <label for="inputNombre" class="form-label">Nombres</label>
-                             <input type="text" class="form-control" id="Nombres" name="Nombre" placeholder="Ingrese el nombre" require>
+                             <input type="text" class="form-control" id="Nombres" name="Nombres" placeholder="Ingrese el nombre" require>
                          </div>
 
                          <div class="mb-1">
