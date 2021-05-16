@@ -12,4 +12,9 @@ class tiendaController{
         require_once "views/tienda/index.php";
     }
 
+    //vista del header
+    public function header(){
+        require_once "views/tienda/header.php";
+    }
+
 }

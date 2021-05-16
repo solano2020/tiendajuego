@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +10,25 @@
     <link rel="stylesheet" href="resources/css/main.css" type="text/css">
     <title>Tienda de video juegos</title>
 </head>
+
 <body>
-     <h1>vista principal </h1>
+
+    <div class="container-fluid">
+           <!-- header -->
+        <div class="row" id="header"></div>
+     
+        <div class="row">
+            <div class="col">
+                  
+            </div>
+
+
+        </div>
 
 
 
-     <script src="resources/js/jquery-3.5.1.js"></script>
-     <script src="resources/js/tienda/principal.js"></script>
+        <script src="resources/js/jquery-3.5.1.js"></script>
+        <script src="resources/js/tienda/index.js"></script>
 </body>
+
 </html>
