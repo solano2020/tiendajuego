@@ -55,9 +55,6 @@
         </div>
 
 
-
-
-
         <script src="resources/js/jquery-3.5.1.js"></script>
         <script src="resources/js/tienda/consultarPrecios.js"></script>
 </body>
