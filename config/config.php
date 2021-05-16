@@ -1,6 +1,6 @@
 <?php
 //Definimos constantes globales
     //controlador
-     define("CONTROLADOR_LOGIN","loginController");
+     define("CONTROLADOR_TIENDA","tiendaController");
     //Accion
-     define("ACCION_LOGIN", "index");
+     define("ACCION_TIENDA", "index");
