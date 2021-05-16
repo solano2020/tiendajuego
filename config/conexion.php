@@ -8,7 +8,7 @@ class conexion
         $host = "localhost";
         $user = "root";
         $password = "191243";
-        $bd = "pagoslinea2";
+        $bd = "tiendajuegos";
 
         //conexion a la base de datos
         $conexion = new mysqli($host, $user, $password, $bd);
