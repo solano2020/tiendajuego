@@ -5,7 +5,8 @@ class tiendaController{
 
     function __construct()
     {
-        
+        require_once "models/tiendaModel.php";
+        $this->tiendaModel = new tiendaModel();
     }
   
     //vista principal para registrar alquiler y venta
@@ -36,6 +37,18 @@ class tiendaController{
     public function VconsultarVentas(){    require_once "views/tienda/consultarVentas.php";}
 
 
-
+   //funcion para registrar cliente
+    public function registrarCliente(){
+         $nombres = $_POST['Nombres'];
+         $apellidos = $_POST['Apellidos'];
+         $cedula = $_POST['Cedula'];
+         $edad = $_POST['Edad'];
+         $correo = $_POST['Correo'];
+         $telefono = $_POST['Telefono'];
+         $direccion = $_POST['Direccion'];
+        
+         $consulta = $this->tiendaModel->registrarCliente($nombres, $apellidos, $cedula, $edad, $correo, $telefono, $direccion);
+         echo $consulta;     
+    }
 
 }
