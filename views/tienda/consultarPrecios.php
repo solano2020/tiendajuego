@@ -13,17 +13,48 @@
 
 <body>
 
-    <div class="container-fluid">
+<div class="container-fluid">
         <!-- header -->
         <div class="row" id="header"></div>
 
         <div class="row">
-            <div class="col">
-                 <h1>Consultar precios</h1>
-            </div>
-
-
+            <h1 align="center">Consulta Precios de Alquiler y venta</h1>
         </div>
+
+        <div class="row g-3">
+            <div class="col-2"></div>
+            <div class="col-auto  align-self-end">
+                <div class="mb-3">
+                    <label for="buscarTitulo" class="col-form-label my-2">Buscar titulo</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <input type="search" id="Titulo" class="form-control" aria-label="Search" placeholder="Ingrese el titulo del juego">
+            </div>
+        </div>
+         
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover tabla">
+                        <thead>
+                            <tr>
+                                <td>Titulos de Juego</td>
+                                <td>Precio de Aquiler</td>
+                                <td>Precio de Venta</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tabla-precios"></tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
 
 
 

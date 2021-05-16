@@ -7,7 +7,8 @@ class tiendaController{
     {
         
     }
-
+  
+    //vista principal para registrar alquiler y venta
     public function index(){
         require_once "views/tienda/index.php";
     }
@@ -18,10 +19,6 @@ class tiendaController{
     }
 
 
-    //redirige a vista registrarTransaccion (vista principal) 
-    public function VregistrarTransaccion(){
-        require_once "views/tienda/registrarTransaccion.php";
-    }
     
     //redirige a vista registrarCliente 
     public function VregistrarCliente(){   require_once "views/tienda/registrarCliente.php";}
