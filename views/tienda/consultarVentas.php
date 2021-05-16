@@ -19,7 +19,7 @@
 
         <div class="row">
             <div class="col">
-
+                <h1>Consultar ventas</h1>
             </div>
 
 

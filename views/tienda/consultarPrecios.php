@@ -19,7 +19,7 @@
 
         <div class="row">
             <div class="col">
-
+                 <h1>Consultar precios</h1>
             </div>
 
 
@@ -28,7 +28,7 @@
 
 
         <script src="resources/js/jquery-3.5.1.js"></script>
-        <script src="resources/js/tienda/consultarPrecio.js"></script>
+        <script src="resources/js/tienda/consultarPrecios.js"></script>
 </body>
 
 </html>
