@@ -67,4 +67,35 @@ class tiendaController{
       echo $consulta; 
     }
 
+    //funcion para mostrar los titulos
+    public function mostrarTitulos(){
+        $titulos = $this->tiendaModel->get_titulosJuegos();
+        echo $titulos;
+    }
+
+    //funcion para obtener los datos del id del juego 
+    public function getAlquilerJuego(){
+        $idJuego = $_GET['ID_Juego'];
+        $alquiler = $this->tiendaModel->getAlquilerJuego($idJuego);
+        echo $alquiler;
+    }
+   
+    //funcion para traer el precio del titulo
+    public function precioTitulo(){
+        $idJuego = $_GET['ID_Juego'];
+        $precio = $this->tiendaModel->getPrecioTitulo($idJuego);
+        echo $precio;
+    }
+
+    public function AlquilerVenta(){
+        $cedula = $_POST['cedula'];
+        $idjuego = $_POST['ID_Juego'];
+        $fecha = $_POST['Fecha'];
+        $valor = $_POST['valor'];
+        if(!empty($cedula) && !empty($idjuego) && !empty($fecha) && !empty($valor)){
+            $resultado = $this->tiendaModel->AlquilerVenta($cedula, $idjuego, $fecha, $valor);
+           echo $resultado;
+        }
+    }
+
 }
