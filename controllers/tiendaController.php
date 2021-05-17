@@ -51,4 +51,20 @@ class tiendaController{
          echo $consulta;     
     }
 
+    //funcion para registrar juego
+    public function registrarJuego(){
+      $titulo = $_POST['Titulo'];
+      $nombre = $_POST['Nombre'];
+      $anio = $_POST['Anio'];
+      $protagonistas = $_POST['Protagonistas'];
+      $director = $_POST['Director'];
+      $productor = $_POST['Productor'];
+      $tecnologia = $_POST['Tecnologia'];
+      $precio = $_POST['Precio'];
+      
+
+      $consulta = $this->tiendaModel->registrarJuego($titulo, $nombre, $anio, $protagonistas, $director, $productor, $tecnologia, $precio);
+      echo $consulta; 
+    }
+
 }

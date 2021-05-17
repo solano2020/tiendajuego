@@ -9,4 +9,19 @@ $(document).ready(function (e) {
          }
      });
 
+     $("#form").submit(function(e){
+        e.preventDefault();
+        let data = $(this).serialize();
+        console.log(data);
+        $.post("index.php?c=tienda&a=registrarJuego",data,function(e){
+           console.log(e); 
+          if(e == "true"){
+               alert("El Juego se ha registrado");
+                $('#form').trigger('reset');
+            }else{
+                alert("Los datos no se pudieron guardar");
+            }  
+        }); 
+    });
+
 });

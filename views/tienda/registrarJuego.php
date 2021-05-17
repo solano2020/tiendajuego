@@ -55,23 +55,22 @@
                         <input type="text" class="form-control" id="Productor" name="Productor" placeholder="Ingrese el Productor" require>
                     </div>
 
-                    <div class="mb-1">
-                        <label for="inputDireccion" class="form-label">Direccion de residencia</label>
-                        <input type="text" class="form-control" id="Direccion" name="Direccion" placeholder="Ingrese la Direccion" require>
-                    </div>
 
                     <div class="form-group my-3" id='tecno'>
                         <label for="tecnologia">Tecnologia</label>
                         <select class="form-control" id="Tecnologia" name="Tecnologia" required>
                             <option disabled selected>seleccione la tecnologia</option>
-                            <option value="xbox">xbox</option>
-                            <option value="playstation">playstation</option>
+                            <option value="Xbox">xbox</option>
+                            <option value="PlayStation">PlayStation</option>
+                            <option value="Nintendo">Nintendo</option>
+                            <option value="PC">PC</option>
                         </select>
                     </div>
 
+
                     <div class="mb-3">
                         <label for="inputAlquiler" class="form-label">Precio de Alquiler</label>
-                        <input type="number" class="form-control" id="PrecioAlquiler" name="PrecioAlquiler" placeholder="Ingrese el precio de alquiler" require>
+                        <input type="number" class="form-control" id="Precio" name="Precio" placeholder="Ingrese el precio de alquiler" require>
                     </div>
 
                     <div class="mb-3 d-grid gap-2">
