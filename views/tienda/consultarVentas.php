@@ -13,17 +13,35 @@
 
 <body>
 
-    <div class="container-fluid">
+<div class="container-fluid">
         <!-- header -->
         <div class="row" id="header"></div>
 
         <div class="row">
-            <div class="col">
-
-            </div>
-
-
+            <h1 align="center">Consultar Ventas del dia</h1>
         </div>
+
+    
+         
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover tabla">
+                        <thead>
+                            <tr>
+                                <td>Nombre del Cliente</td>
+                                <td>Fecha</td>
+                                <td>Venta total</td>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tabla-venta"></tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
 
 
 

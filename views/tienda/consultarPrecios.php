@@ -18,44 +18,45 @@
         <div class="row" id="header"></div>
 
         <div class="row">
-            <h1 align="center">Consultar Cliente</h1>
+            <h1 align="center">Consulta Precios de Alquiler y venta</h1>
         </div>
 
         <div class="row g-3">
             <div class="col-2"></div>
             <div class="col-auto  align-self-end">
                 <div class="mb-3">
-                    <label for="inputPassword6" class="col-form-label my-2">Buscar Cliente</label>
+                    <label for="buscarTitulo" class="col-form-label my-2">Buscar titulo</label>
                 </div>
             </div>
             <div class="col-md-4">
-                <input type="search" id="buscar" class="form-control" aria-label="Search" placeholder="Ingrese el nombre del punto de venta">
+                <input type="search" id="buscarTitulo" class="form-control" aria-label="Search" placeholder="Ingrese el titulo del juego">
             </div>
         </div>
-         
+
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-8">
                 <div class="table-responsive">
                     <table class="table table-dark table-hover tabla">
                         <thead>
                             <tr>
-                                <td>Nombre del Cliente</td>
-                                <td>Juegos Alquilado</td>
-                                <td>fecha del alquiler</td>
-                                <td>fecha de entrega</td>
+                                <td>ID</td>
+                                <td>Titulos de Juegos</td>
+                                <td>Precio de Aquiler</td>
+                                <td></td>
                             </tr>
                         </thead>
 
-                        <tbody id="tabla-clientes"></tbody>
+                        <tbody id="tabla-precios"></tbody>
 
                     </table>
                 </div>
             </div>
         </div>
 
+       
 
         <script src="resources/js/jquery-3.5.1.js"></script>
-        <script src="resources/js/tienda/consultarCliente.js"></script>
+        <script src="resources/js/tienda/consultarPrecios.js"></script>
 </body>
 
 </html>
