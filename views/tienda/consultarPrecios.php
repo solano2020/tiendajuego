@@ -13,7 +13,7 @@
 
 <body>
 
-<div class="container-fluid">
+    <div class="container-fluid">
         <!-- header -->
         <div class="row" id="header"></div>
 
@@ -29,20 +29,19 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <input type="search" id="Titulo" class="form-control" aria-label="Search" placeholder="Ingrese el titulo del juego">
+                <input type="search" id="buscarTitulo" class="form-control" aria-label="Search" placeholder="Ingrese el titulo del juego">
             </div>
         </div>
-         
+
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-8">
                 <div class="table-responsive">
                     <table class="table table-dark table-hover tabla">
                         <thead>
                             <tr>
-                                <td>Titulos de Juego</td>
+                                <td>ID</td>
+                                <td>Titulos de Juegos</td>
                                 <td>Precio de Aquiler</td>
-                                <td>Precio de Venta</td>
-                                <td></td>
                                 <td></td>
                             </tr>
                         </thead>
@@ -54,6 +53,7 @@
             </div>
         </div>
 
+       
 
         <script src="resources/js/jquery-3.5.1.js"></script>
         <script src="resources/js/tienda/consultarPrecios.js"></script>

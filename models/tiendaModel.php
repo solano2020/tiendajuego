@@ -131,4 +131,58 @@ class tiendaModel
         return $id; 
      }
 
+     //funcion para traer los titulos de los juegos con sus precios de alquiler
+     public function getJuegos(){
+        $sql = "SELECT juegos.ID_Juego, juegos.Titulo, juegos.PrecioAlquiler FROM juegos";
+        $consulta = "";
+        $consulta = $this->conexion->query($sql) or die("Error al registrar los datos de venta");
+        $json = array();
+        while($row = $consulta->fetch_array()){
+             $json[] = array(
+                 'ID_Juego' => $row['ID_Juego'],
+                 'Titulo' => $row['Titulo'],
+                 'PrecioAlquiler' => $row['PrecioAlquiler']
+             );
+        }
+        $juegos = json_encode($json);  
+        $this->conexion->close(); 
+        return $juegos; 
+     }
+
+     //funcion para traer juego por titulo 
+     public function consultarTitulo($titulo){
+        $sql = "SELECT juegos.ID_Juego, juegos.Titulo, juegos.PrecioAlquiler FROM juegos WHERE Titulo LIKE '$titulo%'";
+        $consulta = "";
+        $consulta = $this->conexion->query($sql) or die("Error al registrar los datos de venta");
+        $json = array();
+        while($row = $consulta->fetch_array()){
+             $json[] = array(
+                 'ID_Juego' => $row['ID_Juego'],
+                 'Titulo' => $row['Titulo'],
+                 'PrecioAlquiler' => $row['PrecioAlquiler']
+             );
+        }
+        $juegos = json_encode($json);  
+        $this->conexion->close(); 
+        return $juegos; 
+     }
+
+     public function consultarjuego($id){
+        $sql = "SELECT juegos.Titulo, juegos.PrecioAlquiler FROM juegos WHERE ID_Juego = $id";
+        $consulta="";
+        $consulta = $this->conexion->query($sql);
+        $datosjuego = mysqli_fetch_array($consulta);
+        $this->conexion->close();
+        return json_encode($datosjuego); 
+
+     }
+     //se actualiza el titulo y precio del juego
+     public function actualizarJuego($id, $titulo, $precio){
+        $sql = "UPDATE juegos SET Titulo = '$titulo', PrecioAlquiler = $precio WHERE ID_Juego = '$id'";
+        $consulta="";
+        $consulta = $this->conexion->query($sql) or die("Error al registrar los datos de venta");
+        $this->conexion->close();
+        return $consulta;
+     }
+
 }
