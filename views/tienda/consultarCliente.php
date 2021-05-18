@@ -18,7 +18,7 @@
         <div class="row" id="header"></div>
 
         <div class="row">
-            <h1 align="center">Consultar Cliente</h1>
+            <h1 align="center">Consultar Alquiler de los Cliente</h1>
         </div>
 
         <div class="row g-3">
