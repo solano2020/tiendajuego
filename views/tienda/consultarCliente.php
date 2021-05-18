@@ -40,9 +40,9 @@
                         <thead>
                             <tr>
                                 <td>Nombre del Cliente</td>
-                                <td>Juegos Alquilados</td>
-                                <td></td>
-                
+                                <td>Juegos Alquilado</td>
+                                <td>fecha del alquiler</td>
+                                <td>fecha de entrega</td>
                             </tr>
                         </thead>
 

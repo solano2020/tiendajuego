@@ -135,4 +135,9 @@ class tiendaController{
             echo $res;
         }
     }
+
+    public function alquilerGeneral(){
+        $alquilados = $this->tiendaModel->alquilerGeneral();
+        echo $alquilados;
+    }
 }

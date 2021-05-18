@@ -185,4 +185,29 @@ class tiendaModel
         return $consulta;
      }
 
+     //funcion que trae los clientes que an alquilado un juego
+     public function alquilerGeneral(){
+        $sql = "SELECT clientes.Nombres, juegos.Nombre, alquiler_cliente.fecha_ini, alquiler_cliente.fecha_fin 
+                FROM  alquiler_cliente 
+                INNER JOIN juegos
+                ON alquiler_cliente.ID_Juego = juegos.ID_Juego
+                INNER JOIN clientes
+                ON alquiler_cliente.ID_Cliente = clientes.ID_Cliente
+                ";
+        $consulta="";
+        $consulta = $this->conexion->query($sql) or die("Error al registrar los datos de venta");
+        $json = array();
+        while($row = $consulta->fetch_array()){
+             $json[] = array(
+                 'Nombres' => $row['Nombres'],
+                 'nombrejuego' => $row['Nombre'],
+                 'fecha_ini' => $row['fecha_ini'],
+                 'fecha_fin' => $row['fecha_fin']
+             );
+        }
+        $clientes = json_encode($json);  
+        $this->conexion->close(); 
+        return $clientes;
+     }
+
 }
